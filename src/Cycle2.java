@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class Cycle2 {
     public static void main(String[] args) {
 
@@ -97,6 +99,43 @@ public class Cycle2 {
                     System.out.println(i);
                 }
             }
+        }
+
+        System.out.println();
+        Random random = new Random();
+        while (true) {
+            if (random.nextInt(100) == 5) {
+                break;
+            }
+        }
+
+        for (int i = 0; i < 10; i++) {
+            System.out.print(i + ":");
+            System.out.println();
+            for (int j = 0; j < 10; j++) {
+                if (j == 5) {
+                    break;
+                }
+                System.out.print(j + " ");
+            }
+            System.out.println();
+        }
+
+        System.out.println();
+        System.out.println();
+
+        for (int i = 0; i < 10; i++) {
+            if (i != 5) {
+                System.out.print(i + " ");
+            }
+        }
+
+        {
+            int firstDateFriday = 1;
+            do {
+                System.out.println("Сегодня пятница " + firstDateFriday + "-е число. Необходимо подготовить отчет");
+                firstDateFriday += 7;
+            } while (firstDateFriday <= 31);
         }
     }
 }
