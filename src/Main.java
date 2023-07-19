@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-
+        //test
         var friend = 19;
         System.out.println(friend);
         friend = friend + 2;
